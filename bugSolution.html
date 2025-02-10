@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    // Correct way to access div content
+    let myDivElement = document.getElementById("myDiv");
+    if(myDivElement){
+        alert(myDivElement.textContent);
+    }else{
+        alert("Element not found");
+    }
+  </script>
+</body>
+</html>

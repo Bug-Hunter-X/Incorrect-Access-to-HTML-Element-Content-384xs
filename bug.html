@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is inside a div.
+  </div>
+
+  <script>
+    // Incorrect way to access the div's content
+    alert(myDiv.textContent); //Error: myDiv is not defined
+
+    // Correct way to access div content using document.getElementById()
+    let myDivElement = document.getElementById("myDiv");
+    if(myDivElement){
+        alert(myDivElement.textContent);
+    }else{
+        alert("Element not found");
+    }
+  </script>
+</body>
+</html>
